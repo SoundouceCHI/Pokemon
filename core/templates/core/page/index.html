@@ -4,7 +4,12 @@ Template rendu par view_index
 contexte : pokemons (queryset de pokemon)
 
 {%block content %}
+ 
     {% for pokemon in pokemons %}
-        <p>{{pokemon.name}}</p>
+        <p>
+            <a href="{% url 'monsters:view_pokemon' uuid=pokemon.uuid %}">{{pokemon.name}}</a>
+            <a href="{% url 'monsters:edit_pokemon' uuid=pokemon.uuid  %}"> Modifier</a>
+        </p>
+
     {% endfor %}
 {%endblock content %}
