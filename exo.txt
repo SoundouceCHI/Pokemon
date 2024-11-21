@@ -1,0 +1,5 @@
+cree un projet project  
+Django-admin startproject project . 
+creer app monsters, core et ajouter à la liste dans installed_apps 
+Django-admin startapp monsters 
+Django-admin startapp core 
