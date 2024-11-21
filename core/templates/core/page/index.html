@@ -1,0 +1,10 @@
+{%extends "base.html" %}
+prendre comme base base.html 
+Template rendu par view_index 
+contexte : pokemons (queryset de pokemon)
+
+{%block content %}
+    {% for pokemon in pokemons %}
+        <p>{{pokemon.name}}</p>
+    {% endfor %}
+{%endblock content %}
